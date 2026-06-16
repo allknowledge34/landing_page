@@ -8,15 +8,15 @@ import { IntelligenceWheel } from "./hero-wheel/intelligence-wheel";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-white min-h-[90vh] flex flex-col items-center justify-center text-center">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full flex flex-col items-center">
+    <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-white min-h-[90vh] flex flex-col justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-8">
         
-        {/* Content */}
+        {/* Left Column: Content */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-4xl z-10 flex flex-col items-center"
+          className="w-full lg:w-[48%] z-10 flex flex-col items-center lg:items-start text-center lg:text-left"
         >
           {/* Top Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 shadow-sm mb-8">
@@ -27,19 +27,19 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-6">
-            Track Freelance Income.<br className="hidden sm:block" />
-            Manage Expenses.<br className="hidden sm:block" />
+          <h1 className="text-5xl sm:text-6xl lg:text-[4rem] font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-6">
+            Track Freelance Income.<br className="hidden sm:block lg:hidden xl:block" />
+            Manage Expenses.<br className="hidden sm:block lg:hidden xl:block" />
             <span className="text-[#0066FF]">Stay Private.</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl text-slate-500 mb-10 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-slate-500 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0">
             Tralance helps freelancers manage income, expenses, projects, and savings completely offline on their device.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 w-full">
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12 w-full lg:w-auto">
             <a href="https://play.google.com/store/apps/details?id=com.sachin.tralance" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#0A1128] hover:bg-black text-white px-8 py-4 rounded-2xl font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_20px_-10px_rgba(0,0,0,0.3)]">
               {/* SVG for Google Play Icon */}
               <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@ export default function Hero() {
           </div>
 
           {/* Bottom Feature Badges */}
-          <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
             <div className="flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-xl border border-emerald-100">
               <WifiOff className="w-4 h-4 text-emerald-500" />
               <span className="text-xs font-bold text-slate-700">100% Offline</span>
@@ -78,14 +78,18 @@ export default function Hero() {
 
         </motion.div>
 
-        {/* Intelligence Wheel */}
+        {/* Right Column: Intelligence Wheel */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="w-full flex justify-center mt-16 md:mt-24 relative z-0"
+          className="w-full lg:w-[52%] flex justify-center lg:justify-end relative z-0"
         >
-          <IntelligenceWheel />
+          {/* We use a negative margin on large screens if needed to pull the wheel slightly left, 
+              or just let it sit naturally. For a premium SaaS look, the wheel slightly bleeding off or sitting perfectly in the grid is ideal. */}
+          <div className="relative">
+             <IntelligenceWheel />
+          </div>
         </motion.div>
         
       </div>
