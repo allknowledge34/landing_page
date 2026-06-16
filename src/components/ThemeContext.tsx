@@ -17,8 +17,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as Theme | null;
-    const hasDarkClass = document.documentElement.classList.contains("dark");
-    const activeTheme = savedTheme || (hasDarkClass ? "dark" : "light");
+    let activeTheme: Theme = "light";
+    
+    if (savedTheme) {
+      activeTheme = savedTheme;
+    } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      activeTheme = "dark";
+    }
     
     const timer = setTimeout(() => {
       setTheme(activeTheme);

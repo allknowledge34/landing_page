@@ -6,20 +6,20 @@ import { Mail, ShieldCheck, Cpu } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200/50 dark:border-white/5 bg-slate-50 dark:bg-black/40 py-12 sm:py-16 text-slate-500 dark:text-slate-400 text-sm">
+    <footer className="border-t border-slate-200/50 dark:border-[rgba(255,255,255,0.08)] bg-slate-50 dark:bg-[#0B1020] py-12 sm:py-16 text-slate-500 dark:text-[#AEB7C6] text-sm transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-slate-200/50 dark:border-white/5">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-slate-200/50 dark:border-[rgba(255,255,255,0.08)] transition-colors duration-300">
           <div className="md:col-span-5 flex flex-col gap-4">
             <div className="flex items-center gap-2">
               <div className="relative w-9 h-9 rounded-xl overflow-hidden shadow-sm">
                 <img src="/app-icon.png" alt="Tralance Logo" className="w-full h-full object-cover" />
               </div>
-              <span className="font-display font-bold text-lg text-slate-800 dark:text-white">
+              <span className="font-display font-bold text-lg text-slate-800 dark:text-white transition-colors duration-300">
                 Tralance
               </span>
             </div>
-            <p className="max-w-xs text-xs sm:text-sm leading-relaxed text-slate-400">
+            <p className="max-w-xs text-xs sm:text-sm leading-relaxed text-slate-400 dark:text-[#AEB7C6] transition-colors duration-300">
               The premium, local-first finance tracker built specifically for variable freelance income and expense logs.
             </p>
           </div>

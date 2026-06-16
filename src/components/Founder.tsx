@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 export default function Founder() {
   return (
-    <section className="py-32 relative bg-white dark:bg-[#030303] transition-colors duration-500 border-t border-slate-200 dark:border-white/5 overflow-hidden">
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-[#FAFAFA] dark:bg-[#0A1128]/20 -skew-x-12 translate-x-20 -z-10" />
+    <section className="py-32 relative bg-white dark:bg-[#0B1020] transition-colors duration-300 border-t border-slate-200 dark:border-[rgba(255,255,255,0.08)] overflow-hidden">
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-[#FAFAFA] dark:bg-[#111827] -skew-x-12 translate-x-20 -z-10 transition-colors duration-300" />
       <div 
         className="absolute bottom-0 left-0 w-96 h-96 pointer-events-none -z-10" 
         style={{
@@ -39,21 +39,21 @@ export default function Founder() {
           className="w-full md:w-2/3"
         >
           <div className="relative">
-            <span className="absolute -top-16 -left-10 text-8xl font-serif text-slate-100 dark:text-white/5 select-none pointer-events-none">"</span>
+            <span className="absolute -top-16 -left-10 text-8xl font-serif text-slate-100 dark:text-[rgba(255,255,255,0.03)] select-none pointer-events-none transition-colors duration-300">"</span>
             
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-[-0.03em] text-[#0A1128] dark:text-white leading-[1.15] mb-8 relative z-10">
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-[-0.03em] text-[#0A1128] dark:text-white leading-[1.15] mb-8 relative z-10 transition-colors duration-300">
               I built Tralance because I was tired of giving up my privacy just to track my own freelance income.
             </h2>
           </div>
 
-          <div className="prose prose-lg dark:prose-invert prose-p:text-slate-500 dark:prose-p:text-[#8892B0] prose-p:leading-relaxed max-w-none">
+          <div className="prose prose-lg dark:prose-invert prose-p:text-slate-500 dark:prose-p:text-[#AEB7C6] prose-p:leading-relaxed max-w-none transition-colors duration-300">
             <p>
               When you use traditional finance apps, you aren't the customer—your data is the product. Every invoice, every client, every expense is synced to a cloud server, analyzed, and often monetized. 
             </p>
             <p className="mt-6">
               Top-tier software shouldn't require you to surrender your financial data. Tralance was engineered from the ground up as a fully isolated, strictly local ledger for independent professionals. It gives you enterprise-grade financial intelligence, with absolute zero telemetry.
             </p>
-            <p className="mt-8 font-display font-bold text-xl text-[#0066FF] italic">
+            <p className="mt-8 font-display font-bold text-xl text-[#0066FF] dark:text-[#3B82F6] italic transition-colors duration-300">
               Your money. Your device. Your business.
             </p>
           </div>

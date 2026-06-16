@@ -15,9 +15,9 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="relative rounded-[40px] bg-gradient-to-b from-slate-900 to-slate-950 dark:from-slate-950 dark:to-black text-white px-8 py-16 sm:px-16 sm:py-20 text-center border border-slate-800 dark:border-white/5 shadow-2xl"
+          className="relative rounded-[40px] bg-gradient-to-b from-slate-900 to-slate-950 dark:bg-[#1A2238] dark:from-[#1A2238] dark:to-[#1A2238] text-white px-8 py-16 sm:px-16 sm:py-20 text-center border border-slate-800 dark:border-[rgba(255,255,255,0.08)] shadow-2xl transition-colors duration-300"
         >
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] bg-[size:4rem_4rem] rounded-[40px]" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px),linear-gradient(to_bottom,#ffffff03_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] rounded-[40px]" />
 
           <div className="relative z-10 flex flex-col items-center">
             <span className="text-xs font-black uppercase tracking-widest text-primary mb-6">

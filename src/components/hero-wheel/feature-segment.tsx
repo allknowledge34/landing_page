@@ -37,8 +37,8 @@ export function FeatureSegment({ label, icon: Icon, colorClass, angle, radius, i
         className={`w-full h-full relative cursor-pointer group`}
       >
         {/* The segment shape - using a rounded pill shape */}
-        <div className={`absolute inset-0 rounded-[2rem] bg-white border border-slate-100 shadow-sm transition-all duration-300 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] group-hover:border-slate-200`}>
-          <div className={`absolute inset-0 rounded-[2rem] opacity-[0.08] group-hover:opacity-[0.15] transition-opacity duration-300 ${colorClass}`} />
+        <div className={`absolute inset-0 rounded-[2rem] bg-white dark:bg-[#1A2238] border border-slate-100 dark:border-[rgba(255,255,255,0.08)] shadow-sm dark:shadow-[0_4px_20px_rgba(0,0,0,0.5)] transition-all duration-300 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] dark:group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.6)] group-hover:border-slate-200 dark:group-hover:border-[rgba(255,255,255,0.2)]`}>
+          <div className={`absolute inset-0 rounded-[2rem] opacity-[0.08] dark:opacity-[0.15] group-hover:opacity-[0.15] dark:group-hover:opacity-[0.25] transition-opacity duration-300 ${colorClass}`} />
         </div>
 
         {/* The content (counter-rotated to stay upright) */}

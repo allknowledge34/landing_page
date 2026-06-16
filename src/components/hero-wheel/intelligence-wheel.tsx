@@ -42,13 +42,13 @@ export function IntelligenceWheel() {
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
           transition={{ duration: 2, ease: "easeInOut" }}
-          cx="300" cy="300" r="260" fill="none" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="4 8" 
+          cx="300" cy="300" r="260" fill="none" className="stroke-slate-200 dark:stroke-[rgba(255,255,255,0.08)] transition-colors duration-300" strokeWidth="1" strokeDasharray="4 8" 
         />
         <motion.circle 
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
           transition={{ duration: 1.5, ease: "easeInOut", delay: 0.2 }}
-          cx="300" cy="300" r="110" fill="none" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="8 8" 
+          cx="300" cy="300" r="110" fill="none" className="stroke-slate-200 dark:stroke-[rgba(255,255,255,0.08)] transition-colors duration-300" strokeWidth="1" strokeDasharray="8 8" 
         />
         {/* Subtle decorative nodes on the outer ring */}
         {[0, 90, 180, 270].map((angle) => {
@@ -59,7 +59,7 @@ export function IntelligenceWheel() {
               cx={300 + 260 * Math.cos(rad)} 
               cy={300 + 260 * Math.sin(rad)} 
               r="4" 
-              fill="#CBD5E1" 
+              className="fill-slate-300 dark:fill-[#AEB7C6]/30 transition-colors duration-300" 
             />
           );
         })}

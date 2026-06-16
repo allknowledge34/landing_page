@@ -45,15 +45,15 @@ export default function BentoGridSection() {
   };
 
   return (
-    <section className="py-24 bg-white border-t border-slate-100">
+    <section className="py-24 bg-white dark:bg-[#0B1020] border-t border-slate-100 dark:border-[rgba(255,255,255,0.08)] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mb-6">
+          <h2 className="font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 transition-colors duration-300">
             Everything you need.
           </h2>
-          <p className="text-slate-500 font-medium text-lg leading-relaxed">
+          <p className="text-slate-500 dark:text-[#AEB7C6] font-medium text-lg leading-relaxed transition-colors duration-300">
             A carefully curated suite of tools built specifically to handle the chaos of freelance income and variable project expenses.
           </p>
         </div>
@@ -70,13 +70,13 @@ export default function BentoGridSection() {
             <motion.div 
               key={idx} 
               variants={itemVariants}
-              className="bg-white border border-slate-200 rounded-3xl p-6 flex flex-col hover:shadow-lg hover:border-slate-300 transition-all duration-300 group"
+              className="bg-white dark:bg-[#1A2238] border border-slate-200 dark:border-[rgba(255,255,255,0.08)] rounded-3xl p-6 flex flex-col hover:shadow-lg dark:hover:shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:border-slate-300 dark:hover:border-[rgba(255,255,255,0.2)] hover:-translate-y-1 transition-all duration-300 group"
             >
-              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${feat.color} group-hover:scale-110 transition-transform duration-300`}>
+              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${feat.color} dark:opacity-90 group-hover:scale-110 transition-transform duration-300`}>
                 <feat.icon className="w-6 h-6 stroke-[1.5]" />
               </div>
-              <h3 className="text-base font-bold text-slate-900 mb-2">{feat.title}</h3>
-              <p className="text-xs text-slate-500 font-medium leading-relaxed">
+              <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2 transition-colors duration-300">{feat.title}</h3>
+              <p className="text-xs text-slate-500 dark:text-[#AEB7C6] font-medium leading-relaxed transition-colors duration-300">
                 {feat.desc}
               </p>
             </motion.div>
@@ -88,13 +88,13 @@ export default function BentoGridSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-slate-50 rounded-[3rem] border border-slate-200 p-8 md:p-12"
+          className="bg-slate-50 dark:bg-[#111827] rounded-[3rem] border border-slate-200 dark:border-[rgba(255,255,255,0.08)] p-8 md:p-12 transition-colors duration-300"
         >
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {SPECS.map((spec, idx) => (
               <div key={idx} className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#0066FF] flex-shrink-0" />
-                <span className="text-sm font-bold text-slate-800">{spec}</span>
+                <CheckCircle2 className="w-5 h-5 text-[#0066FF] dark:text-[#3B82F6] flex-shrink-0 transition-colors duration-300" />
+                <span className="text-sm font-bold text-slate-800 dark:text-white transition-colors duration-300">{spec}</span>
               </div>
             ))}
           </div>
