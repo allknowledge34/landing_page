@@ -17,8 +17,9 @@ export function FeatureSegment({ label, icon: Icon, colorClass, angle, radius, i
   // Convert polar to cartesian coordinates
   // Angle is offset by -90deg so 0 starts at the top (12 o'clock)
   const rad = (angle - 90) * (Math.PI / 180);
-  const x = radius * Math.cos(rad);
-  const y = radius * Math.sin(rad);
+  // Round to 2 decimal places to prevent React hydration mismatch between server and client floating point precision
+  const x = Number((radius * Math.cos(rad)).toFixed(2));
+  const y = Number((radius * Math.sin(rad)).toFixed(2));
 
   const itemRotation = angle; 
   const contentRotation = -angle;

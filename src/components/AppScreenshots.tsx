@@ -77,7 +77,7 @@ export default function AppScreenshots() {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24">
           
           {/* Phone Mockup Frame */}
-          <div className="relative w-[300px] h-[600px] sm:w-[320px] sm:h-[640px] bg-slate-900 rounded-[3rem] p-3 shadow-2xl flex-shrink-0 border-4 border-slate-800">
+          <div className="relative w-[300px] h-[600px] sm:w-[330px] sm:h-[680px] bg-slate-900 rounded-[3rem] p-3 shadow-2xl flex-shrink-0 border-4 border-slate-800">
             {/* Dynamic Content Mask */}
             <div className="w-full h-full bg-slate-100 rounded-[2.5rem] overflow-hidden relative shadow-inner">
               <AnimatePresence mode="wait">
@@ -93,6 +93,7 @@ export default function AppScreenshots() {
                     src={SCREENS[currentIndex].image}
                     alt={`${SCREENS[currentIndex].title} screenshot`}
                     fill
+                    sizes="(max-width: 640px) 300px, 320px"
                     className="object-cover"
                     priority
                   />
