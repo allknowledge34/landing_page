@@ -5,6 +5,7 @@ import { SITE_CONFIG, SEO_KEYWORDS } from "@/lib/constants";
 import { ThemeProvider } from "@/components/layout/ThemeContext";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -164,6 +165,8 @@ export default function RootLayout({
           </main>
           <Footer />
         </ThemeProvider>
+
+        <GoogleAnalytics gaId="G-QZ3VZDMVPR" />
       </body>
     </html>
   );
