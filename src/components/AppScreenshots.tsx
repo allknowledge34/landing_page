@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Activity, TrendingUp, TrendingDown, PieChart, Settings, Target } from "lucide-react";
+import { Activity, TrendingUp, CalendarDays, PieChart, Settings, Search } from "lucide-react";
 import Image from "next/image";
 
 const SCREENS = [
@@ -18,12 +18,12 @@ const SCREENS = [
     title: "Income Tracking",
     icon: TrendingUp,
     color: "bg-emerald-500",
-    image: "/screenshots/income.jpg"
+    image: "/screenshots/savings.jpg"
   },
   {
     id: "expense",
-    title: "Expense Tracking",
-    icon: TrendingDown,
+    title: "Search Vault",
+    icon: Search, 
     color: "bg-rose-500",
     image: "/screenshots/expense.jpg"
   },
@@ -36,14 +36,14 @@ const SCREENS = [
   },
   {
     id: "savings",
-    title: "Savings Goals",
-    icon: Target,
+    title: "Daily Summary",
+    icon: CalendarDays, 
     color: "bg-amber-500",
-    image: "/screenshots/savings.jpg"
+    image: "/screenshots/income.jpg"
   },
   {
     id: "settings",
-    title: "Settings & Vault",
+    title: "Settings",
     icon: Settings,
     color: "bg-slate-800",
     image: "/screenshots/settings.jpg"
