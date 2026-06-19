@@ -1,8 +1,14 @@
 import React from "react";
+import { Metadata } from "next";
 import { Mail, Cpu } from "lucide-react";
 import ContactForm from "@/components/contact/ContactForm";
 import FaqAccordion from "@/components/contact/FaqAccordion";
 import { SITE_CONFIG } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: "Contact | Tralance Expense Manager Support",
+  description: "Get support for Tralance, the ultimate offline income and expense tracker app. Reach out for developer audits or general help.",
+};
 
 export default function ContactPage() {
   return (

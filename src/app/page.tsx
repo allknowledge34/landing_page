@@ -1,18 +1,24 @@
-import Hero from "@/components/Hero";
-import AppScreenshots from "@/components/AppScreenshots";
-import BentoGridSection from "@/components/BentoGridSection";
-import SavingsInsights from "@/components/SavingsInsights";
-import PrivacyFirst from "@/components/PrivacyFirst";
-import FinalCTA from "@/components/FinalCTA";
+import { Metadata } from "next";
+import Hero from "@/components/home/Hero";
+import AppScreenshots from "@/components/home/AppScreenshots";
+import PrivacyFirst from "@/components/shared/PrivacyFirst";
+import ComparisonSection from "@/components/home/ComparisonSection";
+import FAQSection from "@/components/home/FAQSection";
+import FinalCTA from "@/components/home/FinalCTA";
+
+export const metadata: Metadata = {
+  title: "Tralance — The Best Freelance Income & Expense Tracker",
+  description: "Tralance is an offline income and expense tracker app built for freelancers. Manage project income, track client payments, and categorize expenses privately.",
+};
 
 export default function Home() {
   return (
     <main className="flex-grow">
       <Hero />
       <AppScreenshots />
-      <BentoGridSection />
-      <SavingsInsights />
       <PrivacyFirst />
+      <ComparisonSection />
+      <FAQSection />
       <FinalCTA />
     </main>
   );

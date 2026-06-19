@@ -2,8 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Shield, Lock, Fingerprint, EyeOff, CloudOff, ActivitySquare, ServerOff, Database, ArrowRight } from "lucide-react";
-import Link from "next/link";
+import { Shield, Lock, EyeOff, CloudOff, ActivitySquare, Database, ArrowRight } from "lucide-react";
 
 export default function PrivacyFirst() {
   const cardVariants = {

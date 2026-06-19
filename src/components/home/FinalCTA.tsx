@@ -35,6 +35,7 @@ export default function FinalCTA() {
               className="mt-10"
             >
               <a
+                aria-label="Download Tralance income and expense tracker on Google Play"
                 href="https://play.google.com/store/apps/details?id=com.sachin.tralance"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -1,6 +1,12 @@
 import React from "react";
-import FinalCTA from "@/components/FinalCTA";
-import PrivacyFirst from "@/components/PrivacyFirst";
+import { Metadata } from "next";
+import FinalCTA from "@/components/home/FinalCTA";
+import PrivacyFirst from "@/components/shared/PrivacyFirst";
+
+export const metadata: Metadata = {
+  title: "Privacy Manifesto | Zero Telemetry Expense Manager",
+  description: "Tralance is an offline expense tracker with a strict privacy policy. Zero telemetry, no cloud sync, local SQLite database only.",
+};
 
 export default function PrivacyPage() {
   return (

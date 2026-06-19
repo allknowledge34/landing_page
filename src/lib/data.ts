@@ -1,4 +1,4 @@
-import { SITE_CONFIG } from "./constants";
+
 
 export const ABOUT_SKILLS = [
   "Android SDK / Kotlin",

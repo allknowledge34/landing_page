@@ -1,8 +1,15 @@
 import React from "react";
-import FinalCTA from "@/components/FinalCTA";
+import { Metadata } from "next";
+import FinalCTA from "@/components/home/FinalCTA";
 import { Sparkles } from "lucide-react";
 import FounderProfile from "@/components/about/FounderProfile";
 import { DESIGN_PHILOSOPHIES } from "@/lib/data";
+import { SupportingContentPrivacy } from "@/components/shared/SupportingContent";
+
+export const metadata: Metadata = {
+  title: "About | Privacy Focused Finance App",
+  description: "Learn about the mission behind Tralance. We are building the best freelance income and expense tracker with an uncompromising commitment to local storage and privacy.",
+};
 
 export default function AboutPage() {
   return (
@@ -69,6 +76,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <SupportingContentPrivacy />
       <FinalCTA />
     </>
   );

@@ -31,7 +31,6 @@ export function IntelligenceWheel() {
   return (
     <div className="relative w-[600px] h-[600px] flex items-center justify-center scale-75 md:scale-90 lg:scale-100 origin-center lg:origin-right">
       
-      {/* Outer Rotating SVG Rings */}
       <motion.svg 
         className="absolute inset-0 w-full h-full pointer-events-none"
         animate={{ rotate: 360 }}
@@ -50,7 +49,6 @@ export function IntelligenceWheel() {
           transition={{ duration: 1.5, ease: "easeInOut", delay: 0.2 }}
           cx="300" cy="300" r="110" fill="none" className="stroke-slate-200 dark:stroke-[rgba(255,255,255,0.08)] transition-colors duration-300" strokeWidth="1" strokeDasharray="8 8" 
         />
-        {/* Subtle decorative nodes on the outer ring */}
         {[0, 90, 180, 270].map((angle) => {
           const rad = angle * (Math.PI / 180);
           return (
@@ -65,17 +63,14 @@ export function IntelligenceWheel() {
         })}
       </motion.svg>
 
-      {/* Center Shield */}
       <IntelligenceCenter />
 
-      {/* Segments */}
       <motion.div 
         animate={{ rotate: 360 }}
         transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
         className="absolute inset-0"
       >
         {FEATURES.map((feature, index) => {
-          // Calculate angle for 12 items (360 / 12 = 30 degrees each)
           const angle = index * 30;
           return (
             <FeatureSegment

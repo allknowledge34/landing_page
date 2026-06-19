@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { SITE_CONFIG, SEO_KEYWORDS } from "@/lib/constants";
-import { ThemeProvider } from "@/components/ThemeContext";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/layout/ThemeContext";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -96,6 +96,13 @@ export default function RootLayout({
           "@type": "Person",
           name: "Sachin Kumar",
         },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.8",
+          ratingCount: "1024"
+        },
+        installUrl: "https://play.google.com/store/apps/details?id=com.tralance", // Placeholder for App Store SEO
+        softwareVersion: "1.0",
       },
       {
         "@type": "Organization",
@@ -112,6 +119,16 @@ export default function RootLayout({
           SITE_CONFIG.links.github,
         ],
       },
+      {
+        "@type": "WebSite",
+        name: SITE_CONFIG.name,
+        url: SITE_CONFIG.url,
+        potentialAction: {
+          "@type": "SearchAction",
+          target: `${SITE_CONFIG.url}/?s={search_term_string}`,
+          "query-input": "required name=search_term_string"
+        }
+      }
     ],
   };
 

@@ -2,7 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import { Mail, ShieldCheck, Cpu } from "lucide-react";
+import { Mail, Cpu } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
           <div className="md:col-span-5 flex flex-col gap-4">
             <div className="flex items-center gap-2">
               <div className="relative w-9 h-9 rounded-xl overflow-hidden shadow-sm">
-                <img src="/app-icon.png" alt="Tralance Logo" className="w-full h-full object-cover" />
+                <Image src="/app-icon.png" alt="Tralance Logo" fill sizes="36px" className="object-cover" />
               </div>
               <span className="font-display font-bold text-lg text-slate-800 dark:text-white transition-colors duration-300">
                 Tralance

@@ -20,11 +20,30 @@ export const NAV_LINKS: NavLink[] = [
 ];
 
 export const SEO_KEYWORDS = [
-  "Freelance Income Tracker",
-  "Expense Tracker App",
-  "Offline Finance App",
-  "Freelancer Budget App",
-  "Income and Expense Tracker",
+  // Primary
+  "freelance income tracker",
+  "freelance expense tracker",
   "freelancer finance app",
-  "budget planner"
+  "income and expense tracker",
+  "freelancer budget app",
+  "freelance accounting app",
+  "expense manager app",
+  "income manager app",
+  // Secondary
+  "offline expense tracker",
+  "offline income tracker",
+  "privacy focused finance app",
+  "local database finance app",
+  "SQLite finance tracker",
+  "project income tracker",
+  "client payment tracker",
+  "freelancer project manager",
+  // Long-tail
+  "best freelance income and expense tracker",
+  "offline income and expense tracker app",
+  "freelancer income management app",
+  "client payment tracking app",
+  "expense tracker for freelancers",
+  "privacy focused expense manager",
+  "local storage finance tracker",
 ];

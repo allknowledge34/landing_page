@@ -4,8 +4,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTheme } from "./ThemeContext";
-import { Sun, Moon, Menu, X, ArrowRight, ShieldCheck } from "lucide-react";
+import { Sun, Moon, Menu, X, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
@@ -27,7 +28,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform duration-200">
-                <img src="/app-icon.png" alt="Tralance Logo" className="w-full h-full object-cover" />
+                <Image src="/app-icon.png" alt="Tralance Logo" fill sizes="40px" className="object-cover" />
               </div>
               <span className="font-sans font-bold text-xl tracking-tight bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-[#AEB7C6] bg-clip-text text-transparent">
                 Tralance

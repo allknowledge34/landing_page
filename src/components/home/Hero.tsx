@@ -40,7 +40,7 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12 w-full lg:w-auto">
-            <a href="https://play.google.com/store/apps/details?id=com.sachin.tralance" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#0A1128] dark:bg-white hover:bg-black dark:hover:bg-slate-200 text-white dark:text-[#0A1128] px-8 py-4 rounded-2xl font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_20px_-10px_rgba(0,0,0,0.3)]">
+            <a aria-label="Download Tralance offline expense tracker on Google Play" href="https://play.google.com/store/apps/details?id=com.sachin.tralance" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#0A1128] dark:bg-white hover:bg-black dark:hover:bg-slate-200 text-white dark:text-[#0A1128] px-8 py-4 rounded-2xl font-semibold transition-all hover:scale-105 active:scale-95 shadow-[0_10px_20px_-10px_rgba(0,0,0,0.3)]">
               {/* SVG for Google Play Icon */}
               <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.5 2.5C3.1 2.8 2.8 3.4 2.8 4.2V19.8C2.8 20.6 3.1 21.2 3.5 21.5L3.6 21.6L14.4 10.8V10.6L3.6 2.4L3.5 2.5Z" fill="#2196F3"/>

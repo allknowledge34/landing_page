@@ -1,6 +1,13 @@
 import React from "react";
-import FinalCTA from "@/components/FinalCTA";
-import ShowcaseFeatures from "@/components/ShowcaseFeatures";
+import { Metadata } from "next";
+import FinalCTA from "@/components/home/FinalCTA";
+import ShowcaseFeatures from "@/components/features/ShowcaseFeatures";
+import { SupportingContentFeatures } from "@/components/shared/SupportingContent";
+
+export const metadata: Metadata = {
+  title: "Features | Offline Income and Expense Tracker",
+  description: "Explore Tralance features. The ultimate privacy focused finance app and freelancer budget planner featuring local SQLite storage and no cloud sync.",
+};
 
 export default function FeaturesPage() {
   return (
@@ -28,6 +35,7 @@ export default function FeaturesPage() {
       </section>
 
       <ShowcaseFeatures />
+      <SupportingContentFeatures />
       <FinalCTA />
     </>
   );

@@ -53,7 +53,6 @@ const SCREENS = [
 export default function AppScreenshots() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-scroll logic
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % SCREENS.length);
@@ -76,9 +75,7 @@ export default function AppScreenshots() {
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24">
           
-          {/* Phone Mockup Frame */}
           <div className="relative w-[300px] h-[600px] sm:w-[330px] sm:h-[680px] bg-slate-900 rounded-[3rem] p-3 shadow-2xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex-shrink-0 border-4 border-slate-800 dark:border-slate-800/80 transition-shadow duration-300">
-            {/* Dynamic Content Mask */}
             <div className="w-full h-full bg-slate-100 rounded-[2.5rem] overflow-hidden relative shadow-inner">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -102,7 +99,6 @@ export default function AppScreenshots() {
             </div>
           </div>
 
-          {/* Controls & Descriptions */}
           <div className="w-full max-w-md flex flex-col gap-4">
             {SCREENS.map((screen, idx) => {
               const isActive = idx === currentIndex;

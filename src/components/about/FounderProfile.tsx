@@ -71,11 +71,11 @@ export default function FounderProfile() {
             <Youtube className="w-4 h-4" />
           </a>
           <a
-            href={SITE_CONFIG.links.github}
+            href="https://www.linkedin.com/in/sachin-kumar-355203340/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200/50 dark:border-white/5 text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors"
-            title="GitHub"
+            title="LinkedIn"
           >
             <Linkedin className="w-4 h-4" />
           </a>
