@@ -2,7 +2,7 @@ import { SiteMetadata, NavLink } from "@/types";
 
 export const SITE_CONFIG: SiteMetadata = {
   name: "Tralance",
-  title: "Tralance — The Ultimate Freelance Income & Expense Tracker",
+  title: "Tralance (The Best Freelance Income & Expense Tracker)",
   description: "Take full control of your variable project income and daily spending with total privacy. No servers, no data leaks—just pure money management right in your pocket.",
   url: "https://www.tralance.pro", // Placeholder, change to production domain
   ogImage: "https://www.tralance.pro/og-image.jpg", // Placeholder

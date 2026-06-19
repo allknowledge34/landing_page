@@ -7,7 +7,7 @@ import FAQSection from "@/components/home/FAQSection";
 import FinalCTA from "@/components/home/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "Tralance — The Best Freelance Income & Expense Tracker",
+  title: "Tralance (The Best Freelance Income & Expense Tracker)",
   description: "Tralance is an offline income and expense tracker app built for freelancers. Manage project income, track client payments, and categorize expenses privately.",
 };
 
