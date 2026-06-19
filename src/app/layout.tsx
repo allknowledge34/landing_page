@@ -99,10 +99,10 @@ export default function RootLayout({
         },
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "4.8",
-          ratingCount: "1024"
+          ratingValue: "4.5",
+          ratingCount: "2"
         },
-        installUrl: "https://play.google.com/store/apps/details?id=com.tralance", // Placeholder for App Store SEO
+        installUrl: "https://play.google.com/store/apps/details?id=com.sachin.tralance", // Placeholder for App Store SEO
         softwareVersion: "1.0",
       },
       {
