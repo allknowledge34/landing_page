@@ -7,10 +7,10 @@ export const SITE_CONFIG: SiteMetadata = {
   url: "https://tralance.com", // Placeholder, change to production domain
   ogImage: "https://tralance.com/og-image.jpg", // Placeholder
   links: {
-    twitter: "https://twitter.com/tralanceapp",
-    github: "https://github.com/tralance",
+    twitter: "https://www.instagram.com/",
+    github: "https://github.com/allknowledge34",
   },
-  contactEmail: "support@tralance.com",
+  contactEmail: "allknowledge34@gmail.com",
 };
 
 export const NAV_LINKS: NavLink[] = [
